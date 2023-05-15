@@ -1,5 +1,5 @@
-create database if not exists banhang;
-use banhang;
+create database if not exists quanlybanhang;
+use quanlybanhang;
 create table Customer(
 cID int primary key,
 cName varchar(50),
@@ -9,7 +9,7 @@ create table `Order`(
 oID int primary key,
 cID int,
 oDate date,
-oTotalprice int,
+oTotalprice int ,
 foreign key(cID)references Customer(cID)
 );
 create table Product(
